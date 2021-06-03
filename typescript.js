@@ -62,6 +62,10 @@ function moveFrom(id) {
     if (document.getElementById(id).innerHTML == "" || document.getElementById(id).innerHTML.match(/team./) != currentTeam) {
         if (document.getElementById("von").value != "") {
             document.getElementById("nach").value = id;
+        } else if (currentTeam == "team2") {
+            window.alert("Weiß ist am Zug.");
+        } else {
+            window.alert("Schwarz ist am Zug.");
         }
     } else {
         document.getElementById("von").value = id;
