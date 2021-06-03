@@ -60,7 +60,9 @@ function turnBoard() {
 
 function moveFrom(id) {
     if (document.getElementById(id).innerHTML == "" || document.getElementById(id).innerHTML.match(/team./) != currentTeam) {
-        document.getElementById("nach").value = id;
+        if (document.getElementById("von").value != "") {
+            document.getElementById("nach").value = id;
+        }
     } else {
         document.getElementById("von").value = id;
     }
