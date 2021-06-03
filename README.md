@@ -1,7 +1,7 @@
-Beta 0.1
-
-todo list:
--Movement possibility check.
--ki and/or online play
--graphical figures instead of text
--responsive design
+Beta 0.1<br>
+<br>
+todo list:<br>
+-Movement possibility check.<br>
+-ki and/or online play<br>
+-graphical figures instead of text<br>
+-responsive design<br>
