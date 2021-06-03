@@ -1,0 +1,62 @@
+html {
+    background-color: black;
+    color:grey;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#main section {
+    padding-right: 10px;
+}
+
+#chess-field {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    
+    grid-template-columns: repeat(9, 88px);
+    grid-template-rows: repeat(9, 88px);
+    grid-gap: 1px;
+    cursor: pointer;
+}
+
+.chess-outside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.chess-black {
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    border-color: black;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+.chess-white {
+    background-color: rgba(51, 51, 223, 0.568);
+    width: 100%;
+    height: 100%;
+    border-color: black;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.team1 {
+    color: black;
+}
+
+.team2 {
+    color: white;
+}
