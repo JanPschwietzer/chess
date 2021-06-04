@@ -1,4 +1,9 @@
 let currentTeam = "team2";
+let letters = 0;
+
+function changeFigures (letter) {
+    letters = letter;
+}
 
 function colorChanger(color) {
     let black = document.getElementsByClassName("chess-black");
@@ -101,9 +106,7 @@ function checkPossible() {
 }
 
 function placeFigures() {
-    let letters = document.getElementById('letters-tb');
-
-    if (letters.checked) {
+    if (letters == 0) {
         document.getElementById("a8").innerHTML = '<img src="images/br.svg" class="team1"><p style="visibility: hidden; position: absolute;">R</p>';
         document.getElementById("b8").innerHTML = '<img src="images/bn.svg" class="team1"><p style="visibility: hidden; position: absolute;">N</p>';
         document.getElementById("c8").innerHTML = '<img src="images/bb.svg" class="team1"><p style="visibility: hidden; position: absolute;">B</p>';

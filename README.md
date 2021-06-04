@@ -6,7 +6,7 @@ todo list:<br>
 <li>Move takeback function</li>
 <li>ki and/or online play</li>
 <li><s>graphical figures instead of text</s></li>
-<li>responsive design - in progress</li>
+<li><s>responsive design</s></li>
 </ul>
 <br>
 <hr>
