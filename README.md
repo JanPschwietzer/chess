@@ -3,9 +3,10 @@
 todo list:<br>
 <ul>
 <li>Movement possibility check.</li>
+<li>Move takeback function</li>
 <li>ki and/or online play</li>
 <li><s>graphical figures instead of text</s></li>
-<li>responsive design</li>
+<li>responsive design - in progress</li>
 </ul>
 <br>
 <hr>

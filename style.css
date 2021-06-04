@@ -3,6 +3,10 @@ html {
     color:grey;
 }
 
+header {
+    margin-left: 810px;
+}
+
 #main {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -13,6 +17,9 @@ html {
 }
 
 #chess-field {
+    position: absolute;
+    top: 0px;
+
     display: grid;
     grid-template-columns: repeat(9, 85px);
     grid-template-rows: repeat(9, 85px);
@@ -56,4 +63,92 @@ html {
 
 .team2 {
     color: white;
+}
+
+section {
+    margin-left: 810px;
+}
+
+
+@media only screen and (max-device-width : 1000px) { 
+    html {
+        background-color: white;
+        color:grey;
+    }
+
+    #main section {
+        display: block;
+        margin: auto;
+        margin: 10px;
+        text-align: justify;
+        font-size: xx-large;
+    }
+
+    input {
+        width: 100%;
+        height: 100px;
+        font-size: xx-large;
+        text-align: center;
+    }
+    button {
+        width: 100%;
+        height: 100px;
+        font-size: xx-large;
+        text-align: center;
+    }
+    label {
+        text-align: justify;
+        font-size: xx-large;
+        text-align: center;
+    }
+
+    #main {
+        grid-template-columns: 1fr;
+    }
+    
+    #chess-field {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(9, 10%);
+        grid-template-rows: repeat(9, 10%);
+        grid-gap: 1px;
+        cursor: pointer;
+    }
+    .chess-outside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+    }
+    
+    .chess-black {
+        background-color: grey;
+        width: 100%;
+        height: 100%;
+        border-color: black;
+        border-width: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+    }
+    .chess-white {
+        background-color: rgba(51, 51, 223, 0.568);
+        width: 100%;
+        height: 100%;
+        border-color: black;
+        border-width: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+    }
+    
+    .team1 {
+        color: black;
+    }
+    
+    .team2 {
+        color: white;
+    }
 }

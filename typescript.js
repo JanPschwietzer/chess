@@ -1,5 +1,26 @@
 let currentTeam = "team2";
 
+function colorChanger(color) {
+    let black = document.getElementsByClassName("chess-black");
+    let white = document.getElementsByClassName("chess-white");
+
+    if (!color) {
+        for (let i of black) {
+            i.style.backgroundColor = document.getElementById("color1").value;
+        }
+        for (let i of white) {
+            i.style.backgroundColor = document.getElementById("color2").value;
+        }
+    } else if (color == 1) {
+        for (let i of black) {
+            i.style.backgroundColor = "darkgrey";
+        }
+        for (let i of white) {
+            i.style.backgroundColor = "grey";
+        }
+    }
+}
+
 function newGame() {
     let array = ["a", "b", "c", "d", "e", "f", "g", "h"]
     for (element of array) {
@@ -61,6 +82,8 @@ function chessPlay() {
     }
 
     changeTeam();
+
+    return [von, nach];
 }
 
 function changeTeam() {

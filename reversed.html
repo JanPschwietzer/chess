@@ -98,14 +98,25 @@
                 <p>Bitte geben Sie Ihren Zug ein. Sie müssen nur angeben von wo Ihre Figur wohin laufen soll.</p>
                 <form name="schachzug">
                     <input type="text" id="von" placeholder="von">
-                    <input type="text" id="nach" placeholder="nach">
+                    <input type="text" id="nach" placeholder="nach" disabled>
                     <button type="button" onclick="chessPlay()">Senden</button>
+                    <input type="reset">
                     <br><br><hr><br>
                 </form>
-                <input type="checkbox" id="letters-tb" checked><label for="letters-tb">Grafiken statt Buchstaben (Muss vor dem Spiel ausgewählt werden.)</label>
                 <p id="current-team">Starten Sie ein neues Spiel.</p>
-                <button type="button" onclick="newGame()">New Game</button>
+                <button type="button" onclick="newGame()">Neues Spiel</button>
                 <button type="button" onclick="turnBoard()">Spielfeld drehen.</button>
+                <br><br><hr><br>
+                <form name="optionen">
+                    <input type="checkbox" id="letters-tb" checked><label for="letters-tb">Grafiken statt Buchstaben. (Muss vor dem Spiel ausgewählt werden!)</label>
+                    <button type="button" onclick="newGame()">Übernehmen und neues Spiel starten</button>
+<br><br>
+                    <input type="text" id="color1" placeholder="Schwarze Felder">
+                    <input type="text" id="color2" placeholder="Weiße Felder">
+                    <button type="button" onclick="colorChanger(0)">Farbe wechseln</button>
+                    <button type="button" onclick="colorChanger(1)">Grau</button>
+                    <br><br><hr><br>
+                </form>
             </section>
     </div>
         <footer>
