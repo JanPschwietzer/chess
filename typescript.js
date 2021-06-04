@@ -1,7 +1,7 @@
 let currentTeam = "team2";
 let letters = 0;
 
-function changeFigures (letter) {
+function changeFigures(letter) {
     letters = letter;
 }
 
@@ -27,6 +27,7 @@ function colorChanger(color) {
 }
 
 function newGame() {
+    currentTeam = "team2";
     let array = ["a", "b", "c", "d", "e", "f", "g", "h"]
     for (element of array) {
         for (let i = 1; i <= 8; i++) {
