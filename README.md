@@ -1,7 +1,15 @@
-Beta 0.1
-
-todo list:
--Movement possibility check.
--ki and/or online play
--graphical figures instead of text
--responsive design
+<h1>Beta 0.1</h1>
+<br>
+todo list:<br>
+<ul>
+<li>Movement possibility check.</li>
+<li>ki and/or online play</li>
+<li><s>graphical figures instead of text</s></li>
+<li>responsive design</li>
+</ul>
+<br>
+<hr>
+<br>
+<h2>Changelog</h2>
+<h3>04.06.2021</h3>
+<p>Added the grafical figures credits for them to lichess.com!</p>
