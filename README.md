@@ -1,5 +1,7 @@
 <h1>Beta 0.1</h1>
 <br>
+<p>Please consider that the link to turn the playingboard around in not working on github, it will work when downloading and using the site.</p>
+<br>
 todo list:<br>
 <ul>
 <li>Movement possibility check.</li>
